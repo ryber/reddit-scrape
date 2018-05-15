@@ -13,7 +13,7 @@ if not os.path.exists('output'):
 def writeToFile(commentId, content):
     filename = "output/" + commentId + ".txt"
     file = open(filename,"w")
-    file.write(content.encode('utf-8')) 
+    file.write(content) 
     file.close() 
 
 # this is your oauth authenticated client. You need to set this up on redit and 
